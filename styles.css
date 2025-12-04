@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    background: #0A0F1A;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+section {
+    padding: 80px 12%;
+}
+
+/* Navbar */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: rgba(10, 15, 26, 0.75);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 12%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 16px;
+}
+
+.logo {
+    color: #4DA3FF;
+    font-size: 22px;
+}
+
+/* Hero */
+.hero {
+    padding-top: 160px;
+}
+
+.tag {
+    color: #61A6FF;
+    font-size: 18px;
+}
+
+.title {
+    font-size: 58px;
+    font-weight: bold;
+}
+
+.title span {
+    color: #4DA3FF;
+}
+
+.subtitle {
+    max-width: 700px;
+    margin-top: 20px;
+    color: #b5b5b5;
+    line-height: 1.6;
+}
+
+.tags span {
+    background: #1a2333;
+    padding: 8px 18px;
+    border-radius: 20px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 12px 28px;
+    background: #4DA3FF;
+    color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.btn-outline {
+    padding: 12px 28px;
+    border: 2px solid #4DA3FF;
+    color: #4DA3FF;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/* Skills */
+.skills h2,
+.projects h2,
+.contact h2 {
+    font-size: 36px;
+    color: #4DA3FF;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 20px;
+}
+
+.skill-grid span {
+    background: #121a28;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Projects */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background: #121a28;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 4px solid #4DA3FF;
+}
+
+.project-card h3 {
+    margin: 0;
+    color: #4DA3FF;
+}
+
+.project-card p {
+    color: #ccc;
+}
+
+/* Contact */
+.contact p {
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #999;
+}
