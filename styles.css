@@ -14,7 +14,7 @@ header {
     width: 100%;
     position: fixed;
     top: 0;
-    background: rgba(10, 15, 26, 0.75);
+    background: rgba(10, 15, 26, 0.85);
     backdrop-filter: blur(10px);
     z-index: 100;
 }
@@ -54,7 +54,7 @@ nav ul li a {
 }
 
 .title {
-    font-size: 58px;
+    font-size: 56px;
     font-weight: bold;
 }
 
@@ -64,7 +64,7 @@ nav ul li a {
 
 .subtitle {
     max-width: 700px;
-    margin-top: 20px;
+    margin-top: 15px;
     color: #b5b5b5;
     line-height: 1.6;
 }
@@ -73,7 +73,7 @@ nav ul li a {
     background: #1a2333;
     padding: 8px 18px;
     border-radius: 20px;
-    margin-right: 10px;
+    margin: 5px;
     display: inline-block;
 }
 
@@ -103,7 +103,7 @@ nav ul li a {
 .skills h2,
 .projects h2,
 .contact h2 {
-    font-size: 36px;
+    font-size: 34px;
     color: #4DA3FF;
 }
 
