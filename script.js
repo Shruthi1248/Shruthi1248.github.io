@@ -1,9 +1,15 @@
-const username = "Shruthi1248"
+const username = "Shruthi1248";
 
 const projectGrid =
 document.getElementById("project-grid");
 
 async function loadProjects(){
+
+if(!projectGrid){
+
+return;
+
+}
 
 try{
 
@@ -27,13 +33,20 @@ projectGrid.innerHTML="";
 
 const filteredRepos = repos
 
-.filter(repo=>!repo.fork)
+.filter(repo=>
+
+!repo.fork &&
+
+repo.name!=="Shruthi1248.github.io"
+
+)
 
 .sort(
 
 (a,b)=>
 
 new Date(b.updated_at)
+
 -
 
 new Date(a.updated_at)
@@ -52,18 +65,15 @@ card.innerHTML=`
 
 <h3>
 
-${repo.name
-.replace(/-/g," ")}
+${repo.name.replace(/-/g," ")}
 
 </h3>
 
 <p>
 
-${
-repo.description ||
+${repo.description ||
 
-"AI / Data Science Project"
-}
+"AI / Data Science Project"}
 
 </p>
 
@@ -93,6 +103,8 @@ catch(error){
 
 console.error(error);
 
+if(projectGrid){
+
 projectGrid.innerHTML=`
 
 <div class="project-card">
@@ -119,4 +131,50 @@ Please refresh later.
 
 }
 
+}
+
 loadProjects();
+
+
+// Navbar navigation fix
+
+document
+.querySelectorAll("nav a")
+
+.forEach(link=>{
+
+link.addEventListener(
+
+"click",
+
+function(e){
+
+e.preventDefault();
+
+const targetId=
+
+this.getAttribute("href");
+
+const target=
+
+document.querySelector(targetId);
+
+if(target){
+
+window.scrollTo({
+
+top:
+
+target.offsetTop-80,
+
+behavior:"smooth"
+
+});
+
+}
+
+}
+
+);
+
+});
