@@ -8,42 +8,44 @@ body {
 
 html{
     scroll-behavior:smooth;
+    scroll-padding-top:90px;
 }
 
-section {
-    padding: 80px 12%;
+section{
+    padding:80px 12%;
+    min-height:100px;
 }
 
 /* Navbar */
 
-header {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    background: rgba(10, 15, 26, 0.85);
-    backdrop-filter: blur(10px);
-    z-index: 100;
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    background:rgba(10,15,26,0.85);
+    backdrop-filter:blur(10px);
+    z-index:100;
     border-bottom:1px solid rgba(255,255,255,0.08);
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 12%;
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 12%;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
     padding-left:0;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #ccc;
-    font-size: 16px;
+nav ul li a{
+    text-decoration:none;
+    color:#ccc;
+    font-size:16px;
     transition:0.3s;
 }
 
@@ -51,51 +53,51 @@ nav ul li a:hover{
     color:#4DA3FF;
 }
 
-.logo {
-    color: #4DA3FF;
-    font-size: 22px;
+.logo{
+    color:#4DA3FF;
+    font-size:22px;
     font-weight:bold;
 }
 
 /* Hero */
 
-.hero {
-    padding-top: 160px;
+.hero{
+    padding-top:160px;
     min-height:100vh;
 }
 
-.tag {
-    color: #61A6FF;
-    font-size: 18px;
+.tag{
+    color:#61A6FF;
+    font-size:18px;
 }
 
-.title {
-    font-size: 56px;
-    font-weight: bold;
+.title{
+    font-size:56px;
+    font-weight:bold;
     line-height:1.2;
 }
 
-.title span {
-    color: #4DA3FF;
+.title span{
+    color:#4DA3FF;
 }
 
-.subtitle {
-    max-width: 700px;
-    margin-top: 15px;
-    color: #b5b5b5;
-    line-height: 1.6;
+.subtitle{
+    max-width:700px;
+    margin-top:15px;
+    color:#b5b5b5;
+    line-height:1.6;
 }
 
 .tags{
     margin-top:25px;
 }
 
-.tags span {
-    background: #1a2333;
-    padding: 8px 18px;
-    border-radius: 20px;
-    margin: 5px;
-    display: inline-block;
+.tags span{
+    background:#1A2333;
+    padding:8px 18px;
+    border-radius:20px;
+    margin:5px;
+    display:inline-block;
     transition:0.3s;
 }
 
@@ -104,20 +106,20 @@ nav ul li a:hover{
     transform:translateY(-3px);
 }
 
-.buttons {
-    margin-top: 30px;
+.buttons{
+    margin-top:30px;
     display:flex;
     gap:15px;
     flex-wrap:wrap;
 }
 
-.btn {
-    padding: 12px 28px;
-    background: #4DA3FF;
-    color: black;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
+.btn{
+    padding:12px 28px;
+    background:#4DA3FF;
+    color:black;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
     transition:0.3s;
 }
 
@@ -125,12 +127,12 @@ nav ul li a:hover{
     transform:translateY(-3px);
 }
 
-.btn-outline {
-    padding: 12px 28px;
-    border: 2px solid #4DA3FF;
-    color: #4DA3FF;
-    border-radius: 8px;
-    text-decoration: none;
+.btn-outline{
+    padding:12px 28px;
+    border:2px solid #4DA3FF;
+    color:#4DA3FF;
+    border-radius:8px;
+    text-decoration:none;
     transition:0.3s;
 }
 
@@ -144,34 +146,33 @@ nav ul li a:hover{
 
 .skills h2,
 .projects h2,
-.contact h2 {
+.contact h2{
 
-    font-size: 34px;
-    color: #4DA3FF;
+    font-size:34px;
+    color:#4DA3FF;
     margin-bottom:30px;
 }
 
-.skill-grid {
+.skill-grid{
 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-    gap: 20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+    gap:20px;
 }
 
-.skill-grid span {
+.skill-grid span{
 
-    background: #121a28;
-    padding: 12px;
-    border-radius: 10px;
-    text-align: center;
+    background:#121A28;
+    padding:14px;
+    border-radius:10px;
+    text-align:center;
     transition:0.3s;
 }
 
 .skill-grid span:hover{
 
-    background:#1f2d45;
+    background:#1F2D45;
     transform:translateY(-4px);
-
 }
 
 /* Projects */
@@ -180,19 +181,22 @@ nav ul li a:hover{
     padding-top:80px;
 }
 
-.project-grid {
+.project-grid{
 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 25px;
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:25px;
 }
 
-.project-card {
+.project-card{
 
-    background: #121a28;
-    padding: 20px;
-    border-radius: 12px;
-    border-left: 4px solid #4DA3FF;
+    background:#121A28;
+    padding:20px;
+    border-radius:12px;
+    border-left:4px solid #4DA3FF;
+
     transition:0.3s;
 }
 
@@ -200,72 +204,83 @@ nav ul li a:hover{
 
     transform:translateY(-5px);
 
-    box-shadow:0px 0px 18px rgba(77,163,255,0.25);
+    box-shadow:
+    0px 0px 18px
+    rgba(77,163,255,0.25);
 
 }
 
-.project-card h3 {
+.project-card h3{
 
-    margin: 0;
-    color: #4DA3FF;
+    margin:0;
+    color:#4DA3FF;
 }
 
-.project-card p {
+.project-card p{
 
-    color: #ccc;
+    color:#CCC;
     line-height:1.6;
 }
 
 /* Contact */
 
-.contact p {
+.contact p{
 
-    font-size: 18px;
+    font-size:18px;
 }
 
 .contact a{
 
     color:#4DA3FF;
     text-decoration:none;
-
 }
 
 .contact a:hover{
 
     color:white;
-
 }
 
 /* Footer */
 
-footer {
+footer{
 
-    text-align: center;
-    padding: 25px;
-    color: #999;
-    border-top:1px solid rgba(255,255,255,0.08);
+    text-align:center;
+    padding:25px;
+    color:#999;
+
+    border-top:
+    1px solid rgba(255,255,255,0.08);
 }
 
 /* Scrollbar */
 
 ::-webkit-scrollbar{
 
-width:8px;
-
+    width:8px;
 }
 
 ::-webkit-scrollbar-thumb{
 
-background:#4DA3FF;
-
-border-radius:10px;
-
+    background:#4DA3FF;
+    border-radius:10px;
 }
 
 ::-webkit-scrollbar-track{
 
-background:#0A0F1A;
+    background:#0A0F1A;
+}
 
+/* Navbar Section Fix */
+
+#home,
+#skills,
+#ai-skills,
+#experience,
+#projects,
+#education,
+#contact{
+
+    scroll-margin-top:100px;
 }
 
 /* Tablet */
@@ -274,26 +289,20 @@ background:#0A0F1A;
 
 nav{
 
-flex-direction:column;
-
-gap:15px;
-
+    flex-direction:column;
+    gap:15px;
 }
 
 nav ul{
 
-flex-wrap:wrap;
-
-justify-content:center;
-
-gap:15px;
-
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
 }
 
 .title{
 
-font-size:46px;
-
+    font-size:46px;
 }
 
 }
@@ -304,35 +313,29 @@ font-size:46px;
 
 .title{
 
-font-size:34px;
-
+    font-size:34px;
 }
 
 .subtitle{
 
-font-size:15px;
-
+    font-size:15px;
 }
 
 .buttons{
 
-flex-direction:column;
-
+    flex-direction:column;
 }
 
 .btn,
 .btn-outline{
 
-width:100%;
-
-text-align:center;
-
+    width:100%;
+    text-align:center;
 }
 
 section{
 
-padding:80px 7%;
-
+    padding:80px 7%;
 }
 
 }
