@@ -6,247 +6,265 @@ body {
     overflow-x: hidden;
 }
 
-html{
-    scroll-behavior:smooth;
-    scroll-padding-top:90px;
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
 }
 
-section{
-    padding:80px 12%;
-    min-height:100px;
+section {
+    padding: 80px 12%;
+    min-height: 100px;
 }
 
 /* Navbar */
 
-header{
-    width:100%;
-    position:fixed;
-    top:0;
-    background:rgba(10,15,26,0.85);
-    backdrop-filter:blur(10px);
-    z-index:100;
-    border-bottom:1px solid rgba(255,255,255,0.08);
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: rgba(10, 15, 26, 0.85);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 12%;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 12%;
 }
 
-nav ul{
-    list-style:none;
-    display:flex;
-    gap:30px;
-    padding-left:0;
+.logo {
+    color: #4DA3FF;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-nav ul li a{
-    text-decoration:none;
-    color:#ccc;
-    font-size:16px;
-    transition:0.3s;
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding-left: 0;
 }
 
-nav ul li a:hover{
-    color:#4DA3FF;
+nav ul li a {
+    text-decoration: none;
+    color: #cccccc;
+    font-size: 16px;
+    transition: 0.3s;
 }
 
-.logo{
-    color:#4DA3FF;
-    font-size:22px;
-    font-weight:bold;
+nav ul li a:hover {
+    color: #4DA3FF;
 }
 
 /* Hero */
 
-.hero{
-    padding-top:160px;
-    min-height:100vh;
+.hero {
+    padding-top: 160px;
+    min-height: 100vh;
 }
 
-.tag{
-    color:#61A6FF;
-    font-size:18px;
+.tag {
+    color: #61A6FF;
+    font-size: 18px;
 }
 
-.title{
-    font-size:56px;
-    font-weight:bold;
-    line-height:1.2;
+.title {
+    font-size: 56px;
+    line-height: 1.2;
+    font-weight: bold;
 }
 
-.title span{
-    color:#4DA3FF;
+.title span {
+    color: #4DA3FF;
 }
 
-.subtitle{
-    max-width:700px;
-    margin-top:15px;
-    color:#b5b5b5;
-    line-height:1.6;
+.subtitle {
+    max-width: 750px;
+    color: #b5b5b5;
+    margin-top: 20px;
+    line-height: 1.8;
 }
 
-.tags{
-    margin-top:25px;
+.tags {
+    margin-top: 25px;
 }
 
-.tags span{
-    background:#1A2333;
-    padding:8px 18px;
-    border-radius:20px;
-    margin:5px;
-    display:inline-block;
-    transition:0.3s;
+.tags span {
+    background: #1A2333;
+    padding: 10px 18px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 5px;
+    transition: 0.3s;
 }
 
-.tags span:hover{
-    background:#4DA3FF;
-    transform:translateY(-3px);
+.tags span:hover {
+    background: #4DA3FF;
+    transform: translateY(-3px);
 }
 
-.buttons{
-    margin-top:30px;
-    display:flex;
-    gap:15px;
-    flex-wrap:wrap;
+/* Buttons */
+
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
-.btn{
-    padding:12px 28px;
-    background:#4DA3FF;
-    color:black;
-    border-radius:8px;
-    text-decoration:none;
-    font-weight:bold;
-    transition:0.3s;
+.btn {
+    background: #4DA3FF;
+    color: black;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-.btn:hover{
-    transform:translateY(-3px);
+.btn:hover {
+    transform: translateY(-3px);
 }
 
-.btn-outline{
-    padding:12px 28px;
-    border:2px solid #4DA3FF;
-    color:#4DA3FF;
-    border-radius:8px;
-    text-decoration:none;
-    transition:0.3s;
+.btn-outline {
+    border: 2px solid #4DA3FF;
+    color: #4DA3FF;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-.btn-outline:hover{
-    background:#4DA3FF;
-    color:black;
-    transform:translateY(-3px);
+.btn-outline:hover {
+    background: #4DA3FF;
+    color: black;
+    transform: translateY(-3px);
 }
 
 /* Skills */
 
 .skills h2,
 .projects h2,
-.contact h2{
+.contact h2 {
 
-    font-size:34px;
-    color:#4DA3FF;
-    margin-bottom:30px;
+    color: #4DA3FF;
+    font-size: 34px;
+    margin-bottom: 30px;
 }
 
-.skill-grid{
+.skill-grid {
 
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
-    gap:20px;
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(150px,1fr));
+
+    gap: 20px;
 }
 
-.skill-grid span{
+.skill-grid span {
 
-    background:#121A28;
-    padding:14px;
-    border-radius:10px;
-    text-align:center;
-    transition:0.3s;
+    background: #121A28;
+
+    padding: 14px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
 }
 
-.skill-grid span:hover{
+.skill-grid span:hover {
 
-    background:#1F2D45;
-    transform:translateY(-4px);
+    background: #1F2D45;
+
+    transform: translateY(-4px);
 }
 
 /* Projects */
 
-.projects{
-    padding-top:80px;
+.projects {
+    padding-top: 80px;
 }
 
-.project-grid{
+.project-grid {
 
-    display:grid;
+    display: grid;
+
     grid-template-columns:
     repeat(auto-fit,minmax(260px,1fr));
 
-    gap:25px;
+    gap: 25px;
 }
 
-.project-card{
+.project-card {
 
-    background:#121A28;
-    padding:20px;
-    border-radius:12px;
-    border-left:4px solid #4DA3FF;
+    background: #121A28;
 
-    transition:0.3s;
+    padding: 22px;
+
+    border-radius: 12px;
+
+    border-left: 4px solid #4DA3FF;
+
+    transition: 0.3s;
 }
 
-.project-card:hover{
+.project-card:hover {
 
-    transform:translateY(-5px);
+    transform: translateY(-5px);
 
     box-shadow:
     0px 0px 18px
     rgba(77,163,255,0.25);
-
 }
 
-.project-card h3{
+.project-card h3 {
 
-    margin:0;
-    color:#4DA3FF;
+    color: #4DA3FF;
+
+    margin-top: 0;
 }
 
-.project-card p{
+.project-card p {
 
-    color:#CCC;
-    line-height:1.6;
+    color: #cccccc;
+
+    line-height: 1.7;
 }
 
 /* Contact */
 
-.contact p{
+.contact p {
 
-    font-size:18px;
+    font-size: 18px;
 }
 
-.contact a{
+.contact a {
 
-    color:#4DA3FF;
-    text-decoration:none;
+    color: #4DA3FF;
+
+    text-decoration: none;
 }
 
-.contact a:hover{
+.contact a:hover {
 
-    color:white;
+    color: white;
 }
 
 /* Footer */
 
-footer{
+footer {
 
-    text-align:center;
-    padding:25px;
-    color:#999;
+    text-align: center;
+
+    padding: 25px;
+
+    color: #999999;
 
     border-top:
     1px solid rgba(255,255,255,0.08);
@@ -254,23 +272,24 @@ footer{
 
 /* Scrollbar */
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
 
-    width:8px;
+    width: 8px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-track {
 
-    background:#4DA3FF;
-    border-radius:10px;
+    background: #0A0F1A;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-thumb {
 
-    background:#0A0F1A;
+    background: #4DA3FF;
+
+    border-radius: 10px;
 }
 
-/* Navbar Section Fix */
+/* Section Fix */
 
 #home,
 #skills,
@@ -278,9 +297,9 @@ footer{
 #experience,
 #projects,
 #education,
-#contact{
+#contact {
 
-    scroll-margin-top:100px;
+    scroll-margin-top: 100px;
 }
 
 /* Tablet */
@@ -289,20 +308,26 @@ footer{
 
 nav{
 
-    flex-direction:column;
-    gap:15px;
+flex-direction:column;
+
+gap:15px;
+
 }
 
 nav ul{
 
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:15px;
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:15px;
+
 }
 
 .title{
 
-    font-size:46px;
+font-size:44px;
+
 }
 
 }
@@ -313,29 +338,41 @@ nav ul{
 
 .title{
 
-    font-size:34px;
+font-size:34px;
+
 }
 
 .subtitle{
 
-    font-size:15px;
+font-size:15px;
+
 }
 
 .buttons{
 
-    flex-direction:column;
+flex-direction:column;
+
 }
 
 .btn,
 .btn-outline{
 
-    width:100%;
-    text-align:center;
+width:100%;
+
+text-align:center;
+
 }
 
 section{
 
-    padding:80px 7%;
+padding:80px 7%;
+
+}
+
+nav{
+
+padding:15px 7%;
+
 }
 
 }
