@@ -10,8 +10,8 @@ The portfolio is hosted using **GitHub Pages**.
 
 ---
 
-## 🧑‍💼 About Me
-I am **Shruthi S**, an aspiring Data Scientist with hands-on experience in:
+##  About Me
+I am **Shruthi S**, an Entry Level IT Professional with hands-on experience in:
 
 - Python  
 - Machine Learning & Deep Learning  
