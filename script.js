@@ -1,4 +1,4 @@
-const username = "Shruthi1248";
+const username = "Shruthi1248"
 
 const projectGrid =
 document.getElementById("project-grid");
