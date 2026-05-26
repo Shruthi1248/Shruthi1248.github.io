@@ -13,7 +13,7 @@ return;
 
 try{
 
-const response =
+const response=
 await fetch(
 `https://api.github.com/users/${username}/repos`
 );
@@ -26,18 +26,19 @@ throw new Error(
 
 }
 
-const repos =
+const repos=
 await response.json();
 
 projectGrid.innerHTML="";
 
-const filteredRepos = repos
+repos
 
 .filter(repo=>
 
 !repo.fork &&
 
-repo.name!=="Shruthi1248.github.io"
+repo.name !==
+"Shruthi1248.github.io"
 
 )
 
@@ -51,14 +52,14 @@ new Date(b.updated_at)
 
 new Date(a.updated_at)
 
-);
+)
 
-filteredRepos.forEach(repo=>{
+.forEach(repo=>{
 
-const card =
+const card=
 document.createElement("div");
 
-card.className =
+card.className=
 "project-card";
 
 card.innerHTML=`
@@ -103,78 +104,11 @@ catch(error){
 
 console.error(error);
 
-if(projectGrid){
-
-projectGrid.innerHTML=`
-
-<div class="project-card">
-
-<h3>
-
-Projects Unavailable
-
-</h3>
-
-<p>
-
-Unable to load repositories.
-
-Please refresh later.
-
-</p>
-
-</div>
-
-`;
-
 }
 
 }
 
-}
-
-loadProjects();
-
-
-// Navbar navigation fix
-
-document
-.querySelectorAll("nav a")
-
-.forEach(link=>{
-
-link.addEventListener(
-
-"click",
-
-function(e){
-
-e.preventDefault();
-
-const targetId=
-
-this.getAttribute("href");
-
-const target=
-
-document.querySelector(targetId);
-
-if(target){
-
-window.scrollTo({
-
-top:
-
-target.offsetTop-80,
-
-behavior:"smooth"
-
-});
-
-}
-
-}
-
+window.addEventListener(
+"DOMContentLoaded",
+loadProjects
 );
-
-});
